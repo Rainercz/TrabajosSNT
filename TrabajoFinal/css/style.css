@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    background-image: linear-gradient(rgba(0,0,0,0.6),
+    rgba(0, 0, 0, 0.6)),url(../recursos/portada.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: azure;
+    width: auto;
+    height: 700px;
+
+}
+.contenedor-mp{
+    background-image:linear-gradient(rgba(158, 92, 5, 0.6),
+    rgba(158, 92, 5, 0.6)),url(../recursos/fondo_mp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.contenido {
+display: block;
+}
+
+.cont{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    text-align: left;
+    margin-top: -50px;
+}
+
+.login{
+    margin: 10px;
+    margin-left: 80px;
+}
+.lados{
+    vertical-align: middle;
+    margin-right: 50px;
+}
+.linea{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.cont h1{
+    font-size: 50px;
+}
+.cont p{
+    font-size: 15px;
+
+}
+
+.cont_form{
+    width: 100%;
+    margin-right: -50px;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;}
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}

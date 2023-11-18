@@ -1,0 +1,378 @@
+*{
+  box-sizing: border-box;/*limita el crecimiento de area de trabajo*/
+}
+body{
+font-family: "Advertencia";
+font-size: 15px;
+background-color:#383838;
+margin: 0;
+
+}
+a{
+display: inline-block;
+}
+p{
+color:white;
+}
+h2{
+  background-color: white;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  border-style:groove;
+  text-align: center;
+
+}
+.bloque{
+  padding: 20px;
+  padding-left: 20px;
+  width: 100%;
+  margin-left:0;
+  
+}
+.boton{
+  text-align:center ;
+  text-decoration: none;
+  padding:15px 20px;
+  border-radius: 5px;
+  }
+header{
+    padding: 0px 0;
+    z-index: 2;
+    width: 100%;
+    height: 600px;
+    background: #333435;
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 100%, 0.637), hsla(196, 93%, 70%, 0.616), hsla(204, 5%, 18%, 0.603)), url(../img/ini.jpg);
+    background: linear-gradient(to right, hsla(0, 0%, 100%, 0.637), hsla(196, 93%, 70%, 0.616), hsla(210, 5%, 16%, 0.603)), url(../img/ini.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+header .contenido{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+header .contenido .logo{
+width: 200px;
+margin-left: 80%; 
+}
+header .contenido nav{
+  position:fixed;
+  margin-left: 60%;
+}
+header .contenido nav a{
+color:rgb(250, 252, 253);
+text-decoration: none;
+margin: 0 10px;
+font-size: 20px;
+padding: 5px;
+}
+header .contenido nav a:hover{
+  text-decoration: underline;
+  }
+.ola{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.boton.boton-nosotros{
+color: white;
+background-color: rgb(167, 36, 127);
+font-size: 13px;
+font-weight: bold;
+margin: 20px;
+}
+#inicio{
+position: relative;
+}
+#inicio .bloque-inicio{
+position: absolute;
+top: 60%;
+left: 50%;
+width: 800px;
+text-align: center;
+margin-left: -400px;
+}
+#inicio .bloque-inicio h1{
+color: white;
+font-size: 35px;
+}
+#inicio .bloque-inicio p{
+color: white;
+font-size: 20px;
+}
+main{
+  display: flex;
+}
+.primero{
+  width: 20%;
+}
+.segundo{
+  width: 80%;
+}
+
+/*LUGARES TURISTICOS*/
+.row{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.columna{
+  padding-right: 5px ;
+  padding-left: 5px ;
+}
+.columna-25{
+  width: 25%;
+}
+#destinos .bloque-turistico{
+  border: 1px }
+#destinos .bloque-turistico .bloque-img-turistico{
+  box-shadow: 0px 10px 20px;
+  }
+#destinos .bloque-turistico .bloque-img-turistico img{
+  width: 100%;
+}
+
+#destinos .bloque-turistico .bloque-contenido-turistico{
+  padding-top: 0;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(167, 36, 127);
+}
+#destinos .bloque-turistico .bloque-contenido-turistico a{
+  font-size: 15px;
+
+}
+
+.boton-turistico{
+    color: white;
+    font-size:13px ;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+.encajar{
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 50%;
+}
+.encajar img{
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  position: absolute;
+  border-radius: 50%;
+}
+
+
+.encajarr{
+  width: 100%;
+  height: 50%;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 50%;
+}
+/*ESTILOS PAQUETES*/
+#paquetes .columna{
+  position: relative;
+}
+#paquetes .bloque-tour{
+position: relative;
+}
+#paquetes .tour-contenido{
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  margin-left: 90px;
+}
+#paquetes img{
+  width: 100%;
+  height: 200px;
+}
+
+#paquetes .tour-contenido h3{
+margin-top: 0;
+margin-bottom: 5px;
+font-size: 18px;
+color: black;
+background-color: white;
+}
+.boton-tour{
+  
+    color: white;
+    font-size:13px ;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0px;
+    padding:5px 10px;
+    border-radius: 5px;
+    background-color:rgb(167, 36, 127);
+} 
+/*estilos galeria*/
+.slider{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul{
+  display: flex;
+  padding:0;
+  width: 100%;
+}
+.slider li{
+  width: 300px;
+  height: 200px;
+  list-style: none;
+}
+.slider img{
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+}
+.slider:hover img{
+  filter: grayscale(0);
+}
+.columna-50{
+  width: 50%;
+
+}
+/*ESTILOS NOSOTROS*/
+.columna-33{
+  width: 100%
+}
+#nosotros .columna{
+  padding: 20px;
+  background-color: #acd4ee;
+}
+#nosotros img{
+  width: 100%;
+  height: 100%;
+}
+.valores ul{
+  color: white;
+  margin-left: 0px;
+  padding-left: 10px;
+  list-style:circle;
+}
+#nosotros h3{
+  background-color: rgb(167, 36, 127);
+  text-align: center;
+  font-size: large;
+  color: white;
+}
+
+.vision{
+  text-align: justify;
+}
+#nosotros form{
+  padding: 30px;
+  background-color: skyblue;
+}
+#nosotros form .form-block{
+  width: 100%;
+  margin-bottom: 15px;
+}
+#nosotros form .form-block .form-control{
+  display: block;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px 10px;
+}
+#nosotros form .form-block textarea{
+  display: block;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px 10px;
+}
+/*ESTILOS EXPERIENCIAS*/
+video{
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 40px;
+  
+  }
+.ubicacion{
+  width: 100%;
+  height: 450px;
+  margin: auto;
+  display: block;
+  padding: 40px;
+}
+/*ESTILOS FOOTER*/
+footer{
+  padding: 0;
+  color: white;
+  background-color: black;
+  display: flex;
+}
+footer .row{
+  width: 100%;
+}
+footer img{
+  width: 100%;
+  height: 100%;
+}
+.columna{
+  text-align: justify;
+  padding: 0;
+}
+
+footer h3{
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+footer li{
+  padding-top: 5px;
+  list-style:none;
+  justify-content:space-between;
+}
+footer .redes{
+  display: flex;
+  margin-right: 5px;
+}
+.redes{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-right: 0px;
+}
+footer .redes img{
+  width: 200PX;
+  height: 150PX;
+  position: absolute;
+  left: 50px;
+}
+footer{
+  display: block;
+}
+footer .barra{
+  background-color: rgb(54, 53, 53);
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
